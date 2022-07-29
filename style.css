@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  /* Typography */
+  --font-family-default: "League Spartan", sans-serif;
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-default: 15;
+
+  /* Primary Colors */
+  --color-font-heading: hsl(300, 43%, 22%);
+  --color-font-profil: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+  --color-background-main: hsl(0, 0%, 100%);
+  --color-background-star: hsl(300, 24%, 96%);
+  --color-status: hsl(303, 10%, 53%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 88%;
+  margin: 3rem auto;
+}
+
+/*Introduction Card */
+.intro {
+  text-align: center;
+}
+
+.intro__title {
+  color: var(--color-font-heading);
+  line-height: 0.8;
+  letter-spacing: -1px;
+  font-size: 2.3rem;
+  padding: 0 1em;
+}
+
+.intro__paragraph {
+  color: var(--color-status);
+  font-weight: var(--font-weight-medium);
+  padding: 0 0.3em;
+  line-height: 1.3;
+  font-size: 1.01rem;
+  letter-spacing: 0;
+}
+
+/* Star Card */
+.star-cards {
+  margin: 1.8em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.star__card {
+  background-color: var(--color-background-star);
+  width: 100%;
+  padding: 0.7em;
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+.star__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.star__img {
+  padding: 0 0.17em;
+}
+
+.star__title {
+  font-size: 0.9rem;
+  color: var(--color-font-heading);
+  margin: 0;
+}
+
+/* Profil Card */
+.profil-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profil__card {
+  background-color: var(--color-font-heading);
+  margin: 0.5em 0;
+  padding: 2em;
+  border-radius: 0.4rem;
+}
+
+.profil__img {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.profil__user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profil__name,
+.profil__status {
+  margin: 0;
+}
+
+.profil__name,
+.profil__comment {
+  color: var(--color-background-star);
+}
+
+.profil__name,
+.profil__status,
+.profil__comment {
+  font-size: 0.95rem;
+}
+
+.profil__status {
+  color: var(--color-font-profil);
+}
+
+.profil__comment {
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+  margin: 1.4em 0 0;
+}
